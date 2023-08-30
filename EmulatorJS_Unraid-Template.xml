@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>EmulatorJS</Name>
+  <Repository>linuxserver/emulatorjs:latest</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/emulatorjs</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>ROM files are installed via the backend. The Backend can be accessed at:&#xD;
+http://yourIP:3000/&#xD;
+&#xD;
+Browser support&#xD;
+Only Safari for Apple devices and Chromium based browsers are supported. Other browsers might work, but have not been tested and likely never will be. Gamepads do not function on Firefox. </Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://emulatorjs.org/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693386650</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Backend-Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Data" Target="/data/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/Emulator/data</Config>
+  <Config Name="Config" Target="/config/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/Emulator/config</Config>
+  <Config Name="WebUI" Target="80" Default="280" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">280</Config>
+</Container>
